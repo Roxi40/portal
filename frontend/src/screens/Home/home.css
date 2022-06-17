@@ -1,0 +1,207 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+*{
+
+    /* Theme colors */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --extra: rgb(4, 11, 206);
+    --text-lighter: #6d6875;
+    
+    /* gradient color  */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    }
+
+    body {
+      /*padding-top: 3rem;
+      padding-bottom: 3rem;*/
+      margin: 0;
+      color: var(--midnight);
+      background: var(--white);
+
+      font-family: "Nunito", sans-serif;
+    }
+    
+    /*---------- Global Classes ----------*/
+    
+    NavLink{
+    text-decoration: none;
+    color: var(--text-gray);
+    }
+
+    ul {
+      list-style-type: none; /*takes out the style and makes them display next to each other*/
+      }
+
+    #img-grup{
+      width: 60%;
+      transform: rotate(-15deg);
+    }
+
+    @media (max-width: 756px){
+     #img-grup{
+      width: 80%;
+       transform: none;
+       justify-items: center;
+       padding: 2rem 0 2rem 5rem ;
+     } 
+    }
+
+    .blog-image{
+      height: 300px;
+    }
+
+    img{
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .flex-row{
+    display: flex; /*flexible*/
+    flex-direction: row; /*puts items in different divs in position either next to each other (row) or in columns*/
+    flex-wrap: wrap; /*colapses items in different divs beneath each other when changing the screen dimension, ex: from desktop to phone*/
+    }
+
+
+  .navbar .navbar-brand{
+   color: #c2e9fb;  
+  }
+  
+  .navbar NavLink{
+    color: #3f4954;
+   }
+
+   .btn {
+     background-color: var(--midnight);;
+     border-color: var(--midnight);;
+     box-shadow: 0 0.5em 0.5em -0.4em var(--text-lighter);
+     transition: all 0.2s;
+     text-decoration: none;
+     text-align: center;
+   }
+  
+   .btn:hover{
+    background-color: white;
+    border-color: white;
+    color: var(--midnight);;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--extra);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+   }
+
+   .btn NavLink{
+    color: white;
+   }
+
+   .btn NavLink:hover{
+     color: #3f4954;
+   }
+  
+  .hero {
+    background: url(../../images/calin-stan-pd-Patsy2pM-unsplash.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+  }
+
+  .hero-section{
+    background: url(../../images/header.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+  }
+ 
+  .lead {
+    font-size: 2em;
+  }
+
+  nav.navbar {
+    background-color: #6d6875;
+  }
+
+.blurb h2 {
+   color: var(--text-gray);
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.blurb p {
+    color: var(--text-gray);
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.events {
+  margin: 1rem;
+  text-decoration: none;
+}
+.events img {
+  width: 100%;
+  max-width: 400px;
+}
+.events-info {
+  padding: 1rem;
+}
+.img-large {
+  max-width: 100%;
+}
+.img-thumbnail {
+  height: 80px;
+}
+.small-container {
+  max-width: 600px;
+}
+
+.blogs {
+  margin: 1rem;
+  text-align: justify;
+  text-decoration: none;
+}
+
+.blogs img {
+  width: 100%;
+  max-width: 400px; 
+}
+.blogs-info {
+  padding: 1rem;
+}
+
+.card:hover{
+  background: lightgrey;
+  color: black;
+  box-shadow: 0px 0px 0.5px -0.5px var(--midnight);
+}
+
+.image-blog{
+  width: 300px;
+  height: 250px;
+}
+
+.events {
+  text-decoration: none;
+}
+
+form{
+text-align: center;
+}
